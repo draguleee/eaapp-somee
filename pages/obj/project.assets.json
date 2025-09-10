@@ -764,23 +764,6 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
-      },
-      "pages/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.NET.Test.Sdk": "17.14.1",
-          "NUnit": "4.4.0",
-          "NUnit3TestAdapter": "5.1.0",
-          "Selenium.Support": "4.35.0",
-          "Selenium.WebDriver": "4.35.0"
-        },
-        "compile": {
-          "bin/placeholder/pages.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/pages.dll": {}
-        }
       }
     }
   },
@@ -1901,11 +1884,6 @@
         "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "pages/1.0.0": {
-      "type": "project",
-      "path": "../pages/pages.csproj",
-      "msbuildProject": "../pages/pages.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1916,8 +1894,7 @@
       "NUnit3TestAdapter >= 5.1.0",
       "Selenium.Support >= 4.35.0",
       "Selenium.WebDriver >= 4.35.0",
-      "coverlet.collector >= 6.0.4",
-      "pages >= 1.0.0"
+      "coverlet.collector >= 6.0.4"
     ]
   },
   "packageFolders": {
@@ -1927,11 +1904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\tests\\tests.csproj",
-      "projectName": "tests",
-      "projectPath": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\tests\\tests.csproj",
+      "projectUniqueName": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\pages\\pages.csproj",
+      "projectName": "pages",
+      "projectPath": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\pages\\pages.csproj",
       "packagesPath": "C:\\Users\\ADragu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\tests\\obj\\",
+      "outputPath": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\pages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1952,11 +1929,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\pages\\pages.csproj": {
-              "projectPath": "C:\\Users\\ADragu\\source\\repos\\udemy\\Selenium with C#\\eaapp-somee\\pages\\pages.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
