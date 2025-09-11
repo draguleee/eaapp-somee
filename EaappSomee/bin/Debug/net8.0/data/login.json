@@ -1,0 +1,44 @@
+﻿[
+  {
+    "UserName": "admin",
+    "Password": "password",
+    "RememberMe": true,
+    "TestName": "LoginValidCredentials"
+  },
+  {
+    "UserName": "admin",
+    "Password": "wrongpass",
+    "RememberMe": true,
+    "TestName": "LoginInvalidPassword"
+  },
+  {
+    "UserName": "wronguser",
+    "Password": "password",
+    "RememberMe": true,
+    "TestName": "LoginInvalidUsername"
+  },
+  {
+    "UserName": "wronguser",
+    "Password": "wrongpassword",
+    "RememberMe": true,
+    "TestName": "LoginInvalidUsernameAndPassword"
+  },
+  {
+    "UserName": "",
+    "Password": "password",
+    "RememberMe": true,
+    "TestName": "LoginEmptyUsername"
+  },
+  {
+    "UserName": "admin",
+    "Password": "",
+    "RememberMe": true,
+    "TestName": "LoginEmptyPassword"
+  },
+  {
+    "UserName": "",
+    "Password": "",
+    "RememberMe": true,
+    "TestName": "LoginEmptyUsernameAndPassword"
+  }
+]
