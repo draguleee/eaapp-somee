@@ -62,8 +62,7 @@
               "RelativeToolTip": "models\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T10:53:26.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T10:53:26.498Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "data\\login.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-11T10:46:35.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T10:46:35.402Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "utilities\\CustomMethods.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T10:43:00.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T10:43:00.056Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "GlobalUsings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T10:42:50.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T10:42:50.188Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "pages\\LoginPage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T10:40:43.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T10:40:43.052Z"
             }
           ]
         }
