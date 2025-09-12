@@ -1,3 +1,72 @@
-﻿{
-
-}
+﻿[
+  {
+    "UserName": "aidragu123",
+    "Password": "ExamplePass123!",
+    "ConfirmPassword": "ExamplePass123!",
+    "Email": "aidragu@outlook.com",
+    "TestName": "RegisterValidCredentials"
+  },
+  {
+    "UserName": "user",
+    "Password": "ExamplePass123!",
+    "ConfirmPassword": "ExamplePass123!",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterShortUsername"
+  },
+  {
+    "UserName": "thisisaverylongusernameexceedingthelimit",
+    "Password": "ExamplePass123!",
+    "ConfirmPassword": "ExamplePass123!",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterLongUsername"
+  },
+  {
+    "UserName": "",
+    "Password": "ExamplePass123!",
+    "ConfirmPassword": "ExamplePass123!",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterEmptyUsername"
+  },
+  {
+    "UserName": "exampleUser",
+    "Password": "123",
+    "ConfirmPassword": "123",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterShortPassword"
+  },
+  {
+    "UserName": "exampleUser",
+    "Password": "nodgitsnonletternouppercase",
+    "ConfirmPassword": "nodgitsnonletternouppercase",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterPasswordNoDigitsNoUppercase"
+  },
+  {
+    "UserName": "exampleUser",
+    "Password": "Admin123",
+    "ConfirmPassword": "Admin123!",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterPasswordMismatch"
+  },
+  {
+    "UserName": "exampleUser",
+    "Password": "",
+    "ConfirmPassword": "",
+    "Email": "example@outlook.com",
+    "TestName": "RegisterEmptyPassword"
+  },
+  {
+    "UserName": "exampleUser",
+    "Password": "Password123!",
+    "ConfirmPassword": "Password123!",
+    "Email": "invalidemailformat",
+    "TestName": "RegisterInvalidEmailFormat"
+  },
+  {
+    "UserName": "exampleUser",
+    "Password": "Password123!",
+    "ConfirmPassword": "Password123!",
+    "Email": "",
+    "TestName": "RegisterEmptyEmail"
+  }
+]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EaappSomee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+705ae40de7521698853e6fe4a56322f96795e83f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a562f0848c3af3005ccde5364d9e02064e34cdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("EaappSomee")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EaappSomee")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

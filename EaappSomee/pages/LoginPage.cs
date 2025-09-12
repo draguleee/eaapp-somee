@@ -1,14 +1,14 @@
 ﻿public class LoginPage
 {
-    private readonly IWebDriver driver;
-    private readonly HomePage homePage;
-    private readonly RegisterPage registerPage;
+    private readonly IWebDriver _driver;
+    private readonly HomePage _homePage;
+    private readonly RegisterPage _registerPage;
 
     public LoginPage(IWebDriver driver) 
     { 
-        this.driver = driver;
-        homePage = new HomePage(driver);
-        registerPage = new RegisterPage(driver);
+        _driver = driver;
+        _homePage = new HomePage(driver);
+        _registerPage = new RegisterPage(driver);
     }
 
     public void Login(string username, string password, bool isSelected)
@@ -19,9 +19,14 @@
         LoginButton.ClickElement();
     }
 
-    public (bool employeeDetails, bool manageUsers) IsLoggedIn()
+    public (bool employeeDetails, bool manageUsers) IsLoggedInAsAdmin()
     {
-        return (EmployeeDetails.Displayed, ManageUsers.Displayed);
+        return (CustomMethods.Exists(() => EmployeeDetails), CustomMethods.Exists(() => ManageUsers));
+    }
+
+    public (bool helloUser, bool logOff) IsLoggedIn()
+    {
+        return (CustomMethods.Exists(() => HelloUser), CustomMethods.Exists(() => LogoffButton));
     }
 
     public void RegisterFromLogin()
@@ -29,12 +34,25 @@
         RegisterLink.ClickElement();            
     }
 
-    IWebElement UserName => driver.FindElement(By.Id("UserName"));
-    IWebElement Password => driver.FindElement(By.Id("Password"));
-    IWebElement RememberMe => driver.FindElement(By.Name("RememberMe"));
-    IWebElement LoginButton => driver.FindElement(By.Id("loginIn"));
-    IWebElement RegisterLink => driver.FindElement(By.XPath("//a[contains(text(),'Register')]"));
-    IWebElement EmployeeDetails => driver.FindElement(By.LinkText("Employee Details"));
-    IWebElement ManageUsers => driver.FindElement(By.LinkText("Manage Users"));
-    IWebElement LogoffButton => driver.FindElement(By.LinkText("Log off"));
+    public string HasValidationErrors()
+    {
+        if (UsernameError.Text != "") return UsernameError.Text;
+        else if (PasswordError.Text != "") return PasswordError.Text;
+        else if (UsernameError.Text != "" && PasswordError.Text != "") return UsernameError.Text + " " + PasswordError.Text;
+        else return InvalidLogin.Text;
+    }
+
+    IWebElement UserName => _driver.FindElement(By.Id("UserName"));
+    IWebElement Password => _driver.FindElement(By.Id("Password"));
+    IWebElement RememberMe => _driver.FindElement(By.Name("RememberMe"));
+    IWebElement LoginButton => _driver.FindElement(By.Id("loginIn"));
+    IWebElement RegisterLink => _driver.FindElement(By.XPath("//a[contains(text(),'Register')]"));
+    IWebElement EmployeeDetails => _driver.FindElement(By.LinkText("Employee Details"));
+    IWebElement ManageUsers => _driver.FindElement(By.LinkText("Manage Users"));
+    IWebElement HelloUser => _driver.FindElement(By.XPath("//a[contains(text(), 'Hello')]"));
+    IWebElement LogoffButton => _driver.FindElement(By.LinkText("Log off"));
+    IWebElement UsernameError => _driver.FindElement(By.XPath("//span[@data-valmsg-for='UserName']"));
+    IWebElement PasswordError => _driver.FindElement(By.XPath("//span[@data-valmsg-for='Password']"));
+    IWebElement InvalidLogin => _driver.FindElement(By.CssSelector(".validation-summary-errors > ul > li"));
+    
 }

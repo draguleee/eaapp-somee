@@ -92,5 +92,16 @@
             }
             return options;
         }
+
+        public static bool Exists(Func<IWebElement> getElement)
+        {
+            try
+            {
+                var element = getElement();
+                return element.Displayed;
+            }
+            catch (NoSuchElementException) { return false; }
+            catch (StaleElementReferenceException) { return false; }
+        }
     }
 }

@@ -3,7 +3,13 @@
     "UserName": "admin",
     "Password": "password",
     "RememberMe": true,
-    "TestName": "LoginValidCredentials"
+    "TestName": "LoginValidCredentialsAdmin"
+  },
+  {
+    "UserName": "user1234",
+    "Password": "Skatemaster16!",
+    "RememberMe": true,
+    "TestName": "LoginValidCredentialsUser"
   },
   {
     "UserName": "admin",
